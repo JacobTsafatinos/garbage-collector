@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
                 ;
                 sigset_t sigs;
                 sigemptyset(&sigs);
-                //addiong SIGINT to the set
+                //adding SIGINT to the set
                 sigaddset(&sigs, SIGUSR1);
                 
                 //add signals to the blocked set
@@ -98,10 +98,6 @@ int main(int argc, char **argv) {
         
         if(count % 10 == 0) {
             mark_and_sweep(ll, mark_list);
-            // You might want to add something here to
-            // make your program pause long enough to see what it
-            // is doing. In the commented out code, we wait for 
-            // any user input before continuing.
  
             // char check[MAX_LINE];
             // fgets(check, MAX_LINE, stdin);
