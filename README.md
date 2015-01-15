@@ -3,9 +3,13 @@ This is a trial garbage collector to track and reclaim memory for linked lists a
 
 #Files
 gc.c: Contains the garbage collector (gc_malloc and mark_and_sweep)
+<br/>
 mktrans.c: Generate a random series of add, delete, and print operations on a linked list.
+<br/>
 do_trans.c: Read and execute a list of operations on a linked list. Periodically call the garbage collector.
+<br/>
 do_fstree.c: Performs a series of operations on the fstree data structure.
+<br/>
 listtest.c: Tests operations on a linked list
 
 #Testing
